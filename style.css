@@ -14,3 +14,11 @@ body {
 .flex-column {
   flex-direction: column;
 }
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-justify--content {
+  justify-content: space-between;
+  width: 25%;
+}
