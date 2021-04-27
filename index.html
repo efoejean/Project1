@@ -18,7 +18,7 @@
     <form class="">
       <div class="flex flex-column">
         <div class="flex flex-justify--content">
-          <label>Name</label><input type="text" />
+          <label>Name</label><input type="text" required />
         </div>
         <div class="flex flex-justify--content">
           <label for="phone">Enter your phone number:</label>
@@ -30,9 +30,10 @@
             required
           />
         </div>
+
         <div class="flex flex-justify--content">
           <label for="Services">Services required:</label>
-          <select name="Services" id="style">
+          <select name="Services" id="style" required>
             <option value="senegalese">Senegalese</option>
             <option value="twist">twist</option>
             <option value="microbraids">microbraids</option>
@@ -41,12 +42,16 @@
         </div>
         <div class="flex flex-justify--content">
           <label for="Stylist">Stylist required:</label>
-          <select name="Stylist" id="stylist">
+          <select name="Stylist" id="stylist" required>
             <option value="pamela">Pamela</option>
             <option value="chloe">Chloe</option>
             <option value="marina">Marina</option>
             <option value="Abi">Abi</option>
           </select>
+        </div>
+        <div>
+          <label for="date">Select a Date</label>
+          <input type="date" name="Appointment request" required />
         </div>
       </div>
     </form>
