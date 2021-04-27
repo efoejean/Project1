@@ -3,9 +3,14 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 10px;
 }
+select {
+  background-color: grey;
+  width: 120px;
+}
 
 .flex {
   display: flex;
+  margin: 0.5rem;
 }
 
 .flex-align {
