@@ -21,6 +21,7 @@ select {
 }
 .flex-row {
   flex-direction: row;
+  gap: 10px;
 }
 
 .flex-justify--content {
