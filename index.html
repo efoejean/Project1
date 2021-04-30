@@ -30,27 +30,6 @@
             required
           />
         </div>
-        <div class="flex flex-row">
-          <div>
-            <label for="Services">Services required:</label>
-            <select name="Services" id="style" required>
-              <option value="senegalese">Senegalese</option>
-              <option value="twist">twist</option>
-              <option value="microbraids">microbraids</option>
-              <option value="cornrows">cornrows</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="Price">price:</label>
-            <select name="price" id="price" required>
-              <option value="$150">$150</option>
-              <option value="$180">$180</option>
-              <option value="$200">$200</option>
-              <option value="$220">$220</option>
-            </select>
-          </div>
-        </div>
         <div class="flex flex-justify--content">
           <label for="Stylist">Stylist required:</label>
           <select name="Stylist" id="stylist" required>
@@ -60,9 +39,39 @@
             <option value="Abi">Abi</option>
           </select>
         </div>
-        <div>
-          <label for="date">Choose an Appointment Date</label>
+
+        <div class="flex flex-justify--content">
+          <label for="Services">Services required:</label>
+          <select name="Services" id="style" required>
+            <option value="senegalese">Senegalese</option>
+            <option value="twist">twist</option>
+            <option value="microbraids">microbraids</option>
+            <option value="cornrows">cornrows</option>
+          </select>
+        </div>
+
+        <div class="flex flex-justify--content">
+          <label for="Price">price:</label>
+          <select name="price" id="price" required>
+            <option value="$150">$150</option>
+            <option value="$180">$180</option>
+            <option value="$200">$200</option>
+            <option value="$220">$220</option>
+          </select>
+        </div>
+
+        <div class="flex flex-justify--content">
+          <label for="date">Choose an Appointment Date:</label>
           <input type="date" name="Appointment request" required />
+        </div>
+        <div class="flex flex-justify--content">
+          <label for="time"> Choose a Time:</label>
+          <select name="time" id="time">
+            <option value="8">8:00 AM</option>
+            <option value="9">9:00 AM</option>
+            <option value="3">3:00 PM</option>
+            <option value="4">4:00 PM</option>
+          </select>
         </div>
       </div>
     </form>
