@@ -3,7 +3,12 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 10px;
 }
-
+table {
+  border: 3px solid olive;
+  border-spacing: 0;
+  margin: auto;
+  width: 900px;
+}
 select {
   background-color: grey;
   width: 120px;
