@@ -56,4 +56,4 @@ document.querySelector('form').addEventListener('submit', event => {
   renderAppointment(appointment);
 });
 
-// ToDo write a render function to display the array in a table.
+// ToDo add textbox and button  to sort , filter
