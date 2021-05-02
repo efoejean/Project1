@@ -3,12 +3,21 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 10px;
 }
+form {
+  background-color: #b8860b;
+  height: 500px;
+  padding: 1em;
+}
 table {
   border: 3px solid olive;
   border-spacing: 0;
   margin: auto;
   width: 900px;
 }
+label {
+  font-style: italic;
+}
+
 td,
 th {
   border-bottom: 1px solid olive;
@@ -30,11 +39,17 @@ select {
   width: 120px;
 }
 .button {
-  background-color: blue;
-  border: none;
-  border-radius: 4px;
-  color: white;
+  background-color: rgb(6, 87, 30);
+  border-color: white;
+  border-radius: 10px;
+  color: whitesmoke;
   padding: 8px;
+}
+.button:hover {
+  border-radius: 52% 48% 45% 55% / 30% 30% 70% 70%;
+}
+.button-reset {
+  background-color: red;
 }
 .flex {
   display: flex;
@@ -49,10 +64,10 @@ select {
 }
 .flex-row {
   flex-direction: row;
-  gap: 10px;
+  gap: 25px;
 }
 
 .flex-justify--content {
   justify-content: space-between;
-  width: 25%;
+  width: 100%;
 }
