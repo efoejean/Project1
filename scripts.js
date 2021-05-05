@@ -1,12 +1,12 @@
 const table = document.createElement('table');
-
+const th = table.createTHead('Name', 'date');
 document.body.appendChild(table);
 
 const appointment = [
   {
     Date: '2021-05-05',
     Name: 'Efoe ',
-    Phone: '6184096527',
+    Phone: '618-409-6527',
     Price: '$150',
     Services: 'senegalese',
     Stylist: 'pamela',
@@ -15,7 +15,7 @@ const appointment = [
   {
     Date: '2021-05-06',
     Name: 'Abel ',
-    Phone: '6184096527',
+    Phone: '618-409-6527',
     Price: '$200',
     Services: 'senegalese',
     Stylist: 'pamela',
@@ -24,7 +24,7 @@ const appointment = [
   {
     Date: '2021-06-05',
     Name: 'Abelito ',
-    Phone: '6184096527',
+    Phone: '618-409-6527',
     Price: '$200',
     Services: 'senegalese',
     Stylist: 'pamela',
@@ -35,14 +35,16 @@ const appointment = [
 function renderAppointment(lists) {
   table.innerHTML = lists
     .map(
-      ({ Date, Name, Phone, Price, Services, Stylist, Time }) => `<tr>
-  <th>${Date}</th>
-  <th>${Name}</th>
-  <th>${Phone}</th>
-  <th>${Price}</th>
-  <th>${Services}</th>
-  <th>${Stylist}</th>
-  <th>${Time}</th>
+      ({ Date, Name, Phone, Price, Services, Stylist, Time }) =>
+        `
+       <tr>
+  <td>${Date}</td>
+  <td>${Name}</td>
+  <td>${Phone}</td>
+  <td>${Price}</td>
+  <td>${Services}</td>
+  <td>${Stylist}</td>
+  <td>${Time}</td>
   </tr>`,
     )
     .join('');
