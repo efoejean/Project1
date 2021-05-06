@@ -75,10 +75,10 @@
           <div class="flex flex-justify--content">
             <label for="Time"> Choose a Time:</label>
             <select name="Time" id="time">
-              <option value="8h">8:00 AM</option>
-              <option value="9h">9:00 AM</option>
-              <option value="15h">3:00 PM</option>
-              <option value="16h">4:00 PM</option>
+              <option value="8:00">8:00 AM</option>
+              <option value="9:00">9:00 AM</option>
+              <option value="15:00">3:00 PM</option>
+              <option value="16:00">4:00 PM</option>
             </select>
           </div>
         </div>
@@ -89,11 +89,12 @@
       </form>
     </div>
     <div class="flex flex-column flex-justify--content filter">
-      <label for="startDate">Start Date</label><input type="date" />
-      <label for="endDate">End Date</label><input type="date" />
+      <label for="startDate">Start Date</label
+      ><input id="startDate" type="date" /> <label for="endDate">End Date</label
+      ><input id="endDate" type="date" />
       <button>Search By date</button>
     </div>
-    <button type="button">sort</button>
+    <button id="sort" type="button">sort</button>
     <script src="./scripts.js" type="module"></script>
   </body>
 </html>
