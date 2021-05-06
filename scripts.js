@@ -1,5 +1,4 @@
 const table = document.createElement('table');
-const th = table.createTHead('Name', 'date');
 document.body.appendChild(table);
 
 const appointment = [
@@ -105,6 +104,11 @@ document.querySelector('form').addEventListener('submit', event => {
 document.querySelector('button[id="sort"]').addEventListener('click', () => {
   const sortApp = appointment.sort((a, b) => (a.Date < b.Date ? -1 : 1));
   renderAppointment(sortApp);
+});
+document.querySelector('#filterForm').addEventListener('submit', event => {
+  event.preventDefault();
+  console.log(event.target.elements[0].value);
+  console.log(event.target.elements[1].value);
 });
 
 // ToDo add textbox and button  to sort , filter
