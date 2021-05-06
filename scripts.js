@@ -5,7 +5,7 @@ document.body.appendChild(table);
 const appointment = [
   {
     Date: '2021-05-05',
-    Name: 'Efoe ',
+    Name: 'Efoe',
     Phone: '618-409-6527',
     Price: '$150',
     Services: 'senegalese',
@@ -14,7 +14,7 @@ const appointment = [
   },
   {
     Date: '2021-05-06',
-    Name: 'Abel ',
+    Name: 'Abel',
     Phone: '618-409-6527',
     Price: '$200',
     Services: 'senegalese',
@@ -22,8 +22,17 @@ const appointment = [
     Time: '9h',
   },
   {
+    Date: '2021-03-05',
+    Name: 'jaque',
+    Phone: '618-409-6527',
+    Price: '$150',
+    Services: 'senegalese',
+    Stylist: 'pamela',
+    Time: '8h',
+  },
+  {
     Date: '2021-06-05',
-    Name: 'Abelito ',
+    Name: 'Abelito',
     Phone: '618-409-6527',
     Price: '$200',
     Services: 'senegalese',
