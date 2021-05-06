@@ -112,12 +112,13 @@ document.querySelector('button[id="sort"]').addEventListener('click', () => {
 function filterAppoint(lists, bDate, eDate) {
   return lists.filter(({ Date }) => Date >= bDate && Date <= eDate);
 }
-filterAppoint(appointment, startDate, endDate);
 
 document.querySelector('#filterForm').addEventListener('submit', event => {
   event.preventDefault();
   startDate = event.target.elements[0].value;
   endDate = event.target.elements[1].value;
+  const filterResult = filterAppoint(appointment, startDate, endDate);
+  renderAppointment(filterResult);
 });
 
 // ToDo add textbox and button  to sort , filter
