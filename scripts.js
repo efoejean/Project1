@@ -1,8 +1,8 @@
 const table = document.createElement('table');
 document.body.appendChild(table);
 
-let startDate = 0;
-let endDate = 0;
+let startDate = '';
+let endDate = '';
 
 const appointment = [
   {
@@ -97,6 +97,10 @@ function renderAppointment(lists) {
     .join('');
 }
 renderAppointment(appointment);
+
+function filterAppoint(lists, bDate, eDate) {
+  return lists.filter(({ Date }) => Date >= bDate && Date <= eDate);
+}
 document.querySelector('form').addEventListener('submit', event => {
   event.preventDefault();
 
@@ -109,10 +113,6 @@ document.querySelector('button[id="sort"]').addEventListener('click', () => {
   renderAppointment(sortApp);
 });
 
-function filterAppoint(lists, bDate, eDate) {
-  return lists.filter(({ Date }) => Date >= bDate && Date <= eDate);
-}
-
 document.querySelector('#filterForm').addEventListener('submit', event => {
   event.preventDefault();
   startDate = event.target.elements[0].value;
@@ -121,4 +121,4 @@ document.querySelector('#filterForm').addEventListener('submit', event => {
   renderAppointment(filterResult);
 });
 
-// ToDo add textbox and button  to sort , filter
+// Todo search by phone number.
