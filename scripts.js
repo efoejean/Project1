@@ -66,5 +66,8 @@ document.querySelector('form').addEventListener('submit', event => {
   appointment.push(newAppointment);
   renderAppointment(appointment);
 });
+document.querySelector('button[id="sort"]').addEventListener('click', event => {
+  console.log(event.target.innerHTML);
+});
 
 // ToDo add textbox and button  to sort , filter
