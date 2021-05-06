@@ -10,7 +10,7 @@ const appointment = [
     Price: '$150',
     Services: 'senegalese',
     Stylist: 'pamela',
-    Time: '8h',
+    Time: '8:00',
   },
   {
     Date: '2021-05-06',
@@ -19,7 +19,7 @@ const appointment = [
     Price: '$200',
     Services: 'senegalese',
     Stylist: 'pamela',
-    Time: '9h',
+    Time: '9:00',
   },
   {
     Date: '2021-03-05',
@@ -28,7 +28,43 @@ const appointment = [
     Price: '$150',
     Services: 'senegalese',
     Stylist: 'pamela',
-    Time: '8h',
+    Time: '8:00',
+  },
+  {
+    Date: '2021-05-19',
+    Name: 'louane',
+    Phone: '963-985-9625',
+    Price: '$180',
+    Services: 'cornrows',
+    Stylist: 'Abi',
+    Time: '15:00',
+  },
+  {
+    Date: '2021-05-17',
+    Name: 'beau',
+    Phone: '963-955-9625',
+    Price: '$150',
+    Services: 'twist',
+    Stylist: 'Abi',
+    Time: '9:00',
+  },
+  {
+    Date: '2021-05-20',
+    Name: 'bella',
+    Phone: '618-955-9625',
+    Price: '$220',
+    Services: 'microbraids',
+    Stylist: 'chloe',
+    Time: '15:00',
+  },
+  {
+    Date: '2021-05-20',
+    Name: 'andrea',
+    Phone: '618-355-9625',
+    Price: '$180',
+    Services: 'cornrows',
+    Stylist: 'marina',
+    Time: '9:00',
   },
   {
     Date: '2021-06-05',
@@ -37,7 +73,7 @@ const appointment = [
     Price: '$200',
     Services: 'senegalese',
     Stylist: 'pamela',
-    Time: '9h',
+    Time: '9:00',
   },
 ];
 
@@ -66,8 +102,9 @@ document.querySelector('form').addEventListener('submit', event => {
   appointment.push(newAppointment);
   renderAppointment(appointment);
 });
-document.querySelector('button[id="sort"]').addEventListener('click', event => {
-  console.log(event.target.innerHTML);
+document.querySelector('button[id="sort"]').addEventListener('click', () => {
+  const sortApp = appointment.sort((a, b) => (a.Date < b.Date ? -1 : 1));
+  renderAppointment(sortApp);
 });
 
 // ToDo add textbox and button  to sort , filter
