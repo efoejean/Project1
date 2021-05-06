@@ -89,10 +89,12 @@
       </form>
     </div>
     <div class="flex flex-column flex-justify--content filter">
-      <label for="startDate">Start Date</label
-      ><input id="startDate" type="date" /> <label for="endDate">End Date</label
-      ><input id="endDate" type="date" />
-      <button>Search By date</button>
+      <form id="filterForm">
+        <label for="startDate">Start Date</label
+        ><input id="startDate" type="date" />
+        <label for="endDate">End Date</label><input id="endDate" type="date" />
+        <button id="filterbtn" type="submit">Search By date</button>
+      </form>
     </div>
     <button id="sort" type="button">sort</button>
     <script src="./scripts.js" type="module"></script>
