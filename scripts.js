@@ -1,6 +1,9 @@
 const table = document.createElement('table');
 document.body.appendChild(table);
 
+let startDate = 0;
+let endDate = 0;
+
 const appointment = [
   {
     Date: '2021-05-05',
@@ -105,10 +108,16 @@ document.querySelector('button[id="sort"]').addEventListener('click', () => {
   const sortApp = appointment.sort((a, b) => (a.Date < b.Date ? -1 : 1));
   renderAppointment(sortApp);
 });
+
+function filterAppoint(lists, bDate, eDate) {
+  return lists.filter(({ Date }) => Date >= bDate && Date <= eDate);
+}
+filterAppoint(appointment, startDate, endDate);
+
 document.querySelector('#filterForm').addEventListener('submit', event => {
   event.preventDefault();
-  console.log(event.target.elements[0].value);
-  console.log(event.target.elements[1].value);
+  startDate = event.target.elements[0].value;
+  endDate = event.target.elements[1].value;
 });
 
 // ToDo add textbox and button  to sort , filter
