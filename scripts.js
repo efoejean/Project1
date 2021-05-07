@@ -1,6 +1,3 @@
-const table = document.createElement('table');
-document.body.appendChild(table);
-
 let startDate = '';
 let endDate = '';
 
@@ -79,20 +76,26 @@ const appointment = [
   },
 ];
 
+const tbody = document.querySelector('tbody');
+
 function renderAppointment(lists) {
-  table.innerHTML = lists
+  tbody.innerHTML = lists
     .map(
       ({ Date, Name, Phone, Price, Services, Stylist, Time }) =>
         `
-       <tr>
-  <td>${Date}</td>
-  <td>${Name}</td>
-  <td>${Phone}</td>
-  <td>${Price}</td>
-  <td>${Services}</td>
-  <td>${Stylist}</td>
-  <td>${Time}</td>
-  </tr>`,
+   <tr>
+<td>${Date}</td>
+<td>${Name}</td>
+<td>${Phone}</td>
+<td>${Price}</td>
+<td>${Services}</td>
+<td>${Stylist}</td>
+<td>${Time}</td>
+<td><select name="status" id="time">
+<option value="Scheduled">Scheduled</option>
+<option value="Complete">Complete</option>
+<option value="Cancel">Cancel</option>
+</select></td></tr>`,
     )
     .join('');
 }
