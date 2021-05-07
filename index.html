@@ -98,6 +98,30 @@
       </form>
     </div>
     <button id="sort" type="button">Sort By Date!</button>
+    // copy from MDN
+    <table id="appointment">
+      <thead>
+        <tr>
+          <td>Date</td>
+          <td>Name</td>
+          <td>Phone</td>
+          <td>Price</td>
+          <td>Services</td>
+          <td>Stylist</td>
+          <td>Time</td>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- existing data could optionally be included here -->
+      </tbody>
+    </table>
+    <template id="appointmentrow">
+      <tr>
+        <td class="record"></td>
+        <td></td>
+      </tr>
+    </template>
+
     <script src="./scripts.js" type="module"></script>
   </body>
 </html>
