@@ -104,6 +104,10 @@ renderAppointment(appointment);
 function filterAppoint(lists, bDate, eDate) {
   return lists.filter(({ Date }) => Date >= bDate && Date <= eDate);
 }
+
+function startWithFilter(lists, textInput) {
+  return lists.filter(({ Phone }) => Phone.startsWith(textInput));
+}
 document.querySelector('form').addEventListener('submit', event => {
   event.preventDefault();
 
@@ -133,6 +137,6 @@ document
   .querySelector('input[id="filterSearch"]')
   .addEventListener('input', event => {
     filtSearch = event.target.value;
-    console.log(filtSearch);
+    renderAppointment(startWithFilter(appointment, filtSearch));
   });
 // Todo search by phone number.
