@@ -124,4 +124,10 @@ document.querySelector('#filterForm').addEventListener('submit', event => {
   renderAppointment(filterResult);
 });
 
+document.querySelectorAll('select[name="status"]').forEach(select => {
+  select.addEventListener('change', event => {
+    console.log(event.target.value);
+  });
+});
+
 // Todo search by phone number.
