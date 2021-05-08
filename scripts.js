@@ -106,7 +106,7 @@ function filterAppoint(lists, bDate, eDate) {
 }
 
 function startWithFilter(lists, textInput) {
-  return lists.filter(({ Phone }) => Phone.startsWith(textInput));
+  return lists.filter(({ Phone, Name }) => (Phone, Name).startsWith(textInput));
 }
 document.querySelector('form').addEventListener('submit', event => {
   event.preventDefault();
