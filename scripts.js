@@ -1,6 +1,6 @@
 let startDate = '';
 let endDate = '';
-
+let filtSearch = '';
 const appointment = [
   {
     Date: '2021-05-05',
@@ -128,6 +128,10 @@ document.querySelectorAll('select[name="status"]').forEach(select => {
   select.addEventListener('change', event => {
     console.log(event.target.value);
   });
+});
+document.querySelector('#filterSearch').addEventListener('input', event => {
+  filtSearch = event.target.value;
+  console.log(filtSearch);
 });
 
 // Todo search by phone number.
