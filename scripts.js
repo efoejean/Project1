@@ -1,6 +1,7 @@
 let startDate = '';
 let endDate = '';
 let filterSearch = '';
+const p = document.querySelector('p');
 const appointment = [
   {
     Date: '2021-05-05',
