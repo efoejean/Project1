@@ -150,3 +150,10 @@ document
     filterSearch = event.target.value;
     renderAppointment(startWithFilter(appointment, filterSearch));
   });
+
+// random form query
+document.querySelector('#rewardForm').addEventListener('submit', event => {
+  event.preventDefault();
+  startDate = event.target.elements[0].value;
+  endDate = event.target.elements[1].value;
+});
