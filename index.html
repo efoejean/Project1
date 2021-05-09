@@ -88,30 +88,32 @@
         </div>
       </form>
     </div>
-    <div class="flex flex-column">
-      <form id="filterForm" class="form">
+    <div class="flex flex-justify--content">
+      <form id="filterForm" class="form flex flex-column">
+        <h2>Filter Form</h2>
         <label for="startDate">Start Date</label
         ><input id="startDate" type="date" required />
         <label for="endDate">End Date</label><input id="endDate" type="date" />
         <button id="filterbtn" type="submit">Filter By date</button>
         <button type="reset">Reset!</button>
       </form>
+      <p>The winner will appear here</p>
+
+      <form id="rewardForm" class="form flex flex-column">
+        <h3>Reward</h3>
+        <label for="startDate">Start Date</label
+        ><input id="startDateReward" type="date" required />
+        <label for="endDate">End Date</label
+        ><input id="endDateReward" type="date" required />
+        <button id="filterReward" type="submit">Pick a Winner</button>
+        <button type="reset">Reset!</button>
+      </form>
     </div>
-    <form id="rewardForm" class="form">
-      <label for="startDate">Start Date</label
-      ><input id="startDateReward" type="date" required />
-      <label for="endDate">End Date</label
-      ><input id="endDateReward" type="date" required />
-      <button id="filterReward" type="submit">Pick a Winner</button>
-      <button type="reset">Reset!</button>
-    </form>
-    <p>The winner will appear here</p>
-
+    <div>
+      <label> Search By Name or By Phone Number: </label
+      ><input id="filterSearch" type="text" />
+    </div>
     <button id="sort" type="button">Sort By Date!</button>
-    <input id="filterSearch" type="text" /><label>
-      Search By Name or By Phone Number</label
-    >
-
     <table id="appointment">
       <thead>
         <tr>

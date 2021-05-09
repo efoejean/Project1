@@ -30,7 +30,11 @@ table {
 label {
   font-style: italic;
 }
-
+h1,
+h2,
+h3 {
+  text-align: center;
+}
 td,
 th {
   border-bottom: 1px solid olive;
