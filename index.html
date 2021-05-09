@@ -91,12 +91,20 @@
     <div class="flex flex-column">
       <form id="filterForm" class="form">
         <label for="startDate">Start Date</label
-        ><input id="startDate" type="date" />
+        ><input id="startDate" type="date" required />
         <label for="endDate">End Date</label><input id="endDate" type="date" />
         <button id="filterbtn" type="submit">Filter By date</button>
         <button type="reset">Reset!</button>
       </form>
     </div>
+    <form id="rewardForm" class="form">
+      <label for="startDate">Start Date</label
+      ><input id="startDateReward" type="date" required />
+      <label for="endDate">End Date</label
+      ><input id="endDateReward" type="date" required />
+      <button id="filterReward" type="submit">Pick a Winner</button>
+      <button type="reset">Reset!</button>
+    </form>
     <button id="sort" type="button">Sort By Date!</button>
     <input id="filterSearch" type="text" /><label>
       Search By Name or By Phone Number</label

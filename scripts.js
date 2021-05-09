@@ -101,13 +101,16 @@ function renderAppointment(lists) {
 }
 renderAppointment(appointment);
 
+// Sort filter function
 function filterAppoint(lists, bDate, eDate) {
   return lists.filter(({ Date }) => Date >= bDate && Date <= eDate);
 }
 
+// Search by Name and Phone filter function
 function startWithFilter(lists, textInput) {
   return lists.filter(({ Phone, Name }) => (Phone, Name).startsWith(textInput));
 }
+
 document.querySelector('form').addEventListener('submit', event => {
   event.preventDefault();
 
@@ -120,6 +123,7 @@ document.querySelector('button[id="sort"]').addEventListener('click', () => {
   renderAppointment(sortApp);
 });
 
+// filter query
 document.querySelector('#filterForm').addEventListener('submit', event => {
   event.preventDefault();
   startDate = event.target.elements[0].value;
@@ -139,4 +143,3 @@ document
     filterSearch = event.target.value;
     renderAppointment(startWithFilter(appointment, filterSearch));
   });
-// Todo search by phone number.
