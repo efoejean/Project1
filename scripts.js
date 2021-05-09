@@ -160,5 +160,5 @@ document.querySelector('#rewardForm').addEventListener('submit', event => {
   const filterRewardResult = filterAppoint(appointment, startDate, endDate);
   const rewardResult = getRandomIntInclusive(0, filterRewardResult.length - 1);
   const randomName = filterRewardResult[rewardResult];
-  console.log(randomName);
+  p.innerHTML = `The winner is ${randomName.Name}, please contact her at ${randomName.Phone}`;
 });
