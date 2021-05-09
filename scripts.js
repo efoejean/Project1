@@ -158,4 +158,5 @@ document.querySelector('#rewardForm').addEventListener('submit', event => {
   endDate = event.target.elements[1].value;
   const filterRewardResult = filterAppoint(appointment, startDate, endDate);
   const rewardResult = getRandomIntInclusive(0, filterRewardResult.length - 1);
+  console.log(rewardResult);
 });
