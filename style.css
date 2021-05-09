@@ -1,5 +1,5 @@
 :root {
-  --small-gap: 10px;
+  --small-gap: 5px;
   --medium-gap: 25px;
 }
 body {
@@ -11,7 +11,7 @@ form {
   background-color: #b8860b;
   border: 1px solid;
   box-shadow: 5px 5px;
-  height: 450px;
+  height: auto;
   max-width: max-content;
   padding: 1em;
 }
@@ -70,7 +70,8 @@ tr:hover {
   background-color: wheat;
   border: 1px solid;
   box-shadow: 2px 5px;
-  height: 100px;
+  gap: var(--small-gap);
+  height: auto;
   max-width: min-content;
   padding: 1em;
 }
