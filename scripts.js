@@ -156,4 +156,5 @@ document.querySelector('#rewardForm').addEventListener('submit', event => {
   event.preventDefault();
   startDate = event.target.elements[0].value;
   endDate = event.target.elements[1].value;
+  const filterRewardResult = filterAppoint(appointment, startDate, endDate);
 });
