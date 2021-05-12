@@ -63,8 +63,8 @@ document.querySelector('#filterForm').addEventListener('submit', event => {
   renderAppointment(filterResult);
 });
 
-document.querySelectorAll('select[name="status"]').forEach(select => {
-  select.addEventListener('change', event => {
+document.querySelectorAll('input[type="checkbox"]').forEach(input => {
+  input.addEventListener('change', event => {
     console.log(event.target.value);
   });
 });
