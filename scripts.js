@@ -79,7 +79,11 @@ const appointment = [
   },
 ];
 
-function renderAppointment(lists) {}
+function renderAppointment(lists) {
+  lists.forEach(({ Date, Name, Phone, Price, Services, Stylist, Time }) => {
+    const newRow = content.cloneNode(true);
+  });
+}
 
 renderAppointment(appointment);
 
