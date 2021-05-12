@@ -57,8 +57,10 @@ document.querySelector('#filterForm').addEventListener('submit', event => {
 });
 
 document.querySelectorAll('input[type="checkbox"]').forEach(input => {
-  input.addEventListener('change', event => {
-    console.log(event.target.value);
+  input.addEventListener('change', ({ target: { checked } }) => {
+    document.querySelector('#delete').addEventListener('click', () => {
+      console.log(checked);
+    });
   });
 });
 document
