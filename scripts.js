@@ -1,4 +1,10 @@
-import { appointments, filterAppoint, nameFilter } from './data.js';
+import {
+  appointments,
+  filterAppoint,
+  nameFilter,
+  sortApp,
+  getRandomIntInclusive,
+} from './data.js';
 
 let startDate = '';
 let endDate = '';
@@ -28,11 +34,6 @@ function renderAppointment(lists) {
 renderAppointment(appointments);
 
 // random function
-function getRandomIntInclusive(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
-}
 
 document.querySelector('form').addEventListener('submit', event => {
   event.preventDefault();
@@ -42,8 +43,7 @@ document.querySelector('form').addEventListener('submit', event => {
   renderAppointment(appointments);
 });
 document.querySelector('button[id="sort"]').addEventListener('click', () => {
-  const sortApp = appointments.sort((a, b) => (a.Date < b.Date ? -1 : 1));
-  renderAppointment(sortApp);
+  renderAppointment(sortApp(appointments));
 });
 
 // filter query
