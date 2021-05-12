@@ -2,6 +2,8 @@ let startDate = '';
 let endDate = '';
 let filterSearch = '';
 const p = document.querySelector('p');
+const tbody = document.querySelector('tbody');
+const { content } = document.querySelector('template');
 const appointment = [
   {
     Date: '2021-05-05',
@@ -77,29 +79,8 @@ const appointment = [
   },
 ];
 
-const tbody = document.querySelector('tbody');
+function renderAppointment(lists) {}
 
-function renderAppointment(lists) {
-  tbody.innerHTML = lists
-    .map(
-      ({ Date, Name, Phone, Price, Services, Stylist, Time }) =>
-        `
-   <tr>
-<td>${Date}</td>
-<td>${Name}</td>
-<td>${Phone}</td>
-<td>${Price}</td>
-<td>${Services}</td>
-<td>${Stylist}</td>
-<td>${Time}</td>
-<td><select name="status" id="time">
-<option value="Scheduled">Scheduled</option>
-<option value="Complete">Complete</option>
-<option value="Cancel">Cancel</option>
-</select></td></tr>`,
-    )
-    .join('');
-}
 renderAppointment(appointment);
 
 // Sort filter function
