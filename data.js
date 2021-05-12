@@ -82,3 +82,6 @@ export const nameFilter = (lists, textInput) =>
   );
 export const sortApp = lists =>
   lists.sort((a, b) => (a.Date < b.Date ? -1 : 1));
+
+export const getRandomIntInclusive = (min, max) =>
+  Math.floor(Math.random() * (max - min + 1) + min);
