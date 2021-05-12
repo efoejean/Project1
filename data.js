@@ -80,3 +80,5 @@ export const nameFilter = (lists, textInput) =>
   lists.filter(({ Name }) =>
     Name.toLowerCase().includes(textInput.toLowerCase()),
   );
+export const sortApp = lists =>
+  lists.sort((a, b) => (a.Date < b.Date ? -1 : 1));
