@@ -91,6 +91,7 @@ function renderAppointment(lists) {
     tds[5].innerHTML = Services;
     tds[6].innerHTML = Stylist;
     tds[7].innerHTML = Time;
+    tbody.appendChild(newRow);
   });
 }
 
