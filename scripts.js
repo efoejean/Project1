@@ -2,7 +2,7 @@ import { appointments, filterAppoint } from './data.js';
 
 let startDate = '';
 let endDate = '';
-let filterSearch = '';
+
 const p = document.querySelector('p');
 const tbody = document.querySelector('tbody');
 const { content } = document.querySelector('template');
@@ -71,9 +71,8 @@ document.querySelectorAll('input[type="checkbox"]').forEach(input => {
 });
 document
   .querySelector('input[id="filterSearch"]')
-  .addEventListener('input', event => {
-    filterSearch = event.target.value;
-    renderAppointment(startWithFilter(appointments, filterSearch));
+  .addEventListener('input', ({ target: { value } }) => {
+    renderAppointment(startWithFilter(appointments, value));
   });
 
 // random form query
