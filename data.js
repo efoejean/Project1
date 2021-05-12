@@ -72,3 +72,6 @@ export const appointments = [
     Time: '9:00',
   },
 ];
+
+export const filterAppoint = (lists, bDate, eDate) =>
+  lists.filter(({ Date }) => Date >= bDate && Date <= eDate);
