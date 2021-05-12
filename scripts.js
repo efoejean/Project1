@@ -83,6 +83,7 @@ function renderAppointment(lists) {
   lists.forEach(({ Date, Name, Phone, Price, Services, Stylist, Time }) => {
     const newRow = content.cloneNode(true);
     const tds = newRow.querySelectorAll('td');
+    tds[0].innerHTML = `<input type="checkbox" id="" name="selectCheckbox">`;
   });
 }
 
