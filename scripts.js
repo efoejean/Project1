@@ -32,7 +32,7 @@ renderAppointment(appointments);
 // Search by Name and Phone filter function
 function startWithFilter(lists, textInput) {
   return lists.filter(({ Phone, Name }) =>
-    (Phone, Name.toLowerCase()).startsWith(textInput),
+    (Phone, Name.toLowerCase()).includes(textInput.toLowerCase()),
   );
 }
 
