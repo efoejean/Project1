@@ -17,15 +17,21 @@ form {
 }
 
 select {
-  background-color: grey;
+  background-color: whitesmoke;
   width: 120px;
 }
 table {
-  border: 3px solid olive;
+  border: 3px solid rgb(200, 200, 200) olive;
+  border-collapse: collapse;
   border-spacing: 0;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
   margin: auto;
   margin-top: 100px;
   width: 900px;
+}
+thead {
+  font-weight: bold;
 }
 label {
   font-style: italic;
@@ -37,6 +43,7 @@ h3 {
 }
 td,
 th {
+  border: 1px solid rgb(190, 190, 190);
   border-bottom: 1px solid olive;
   font-family: Arial, sans-serif;
   padding: 0.5em;
