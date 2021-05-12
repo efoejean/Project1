@@ -84,6 +84,13 @@ function renderAppointment(lists) {
     const newRow = content.cloneNode(true);
     const tds = newRow.querySelectorAll('td');
     tds[0].innerHTML = `<input type="checkbox" id="" name="selectCheckbox">`;
+    tds[1].innerHTML = Date;
+    tds[2].innerHTML = Name;
+    tds[3].innerHTML = Phone;
+    tds[4].innerHTML = Price;
+    tds[5].innerHTML = Services;
+    tds[6].innerHTML = Stylist;
+    tds[7].innerHTML = Time;
   });
 }
 
