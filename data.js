@@ -75,3 +75,8 @@ export const appointments = [
 
 export const filterAppoint = (lists, bDate, eDate) =>
   lists.filter(({ Date }) => Date >= bDate && Date <= eDate);
+
+export const nameFilter = (lists, textInput) =>
+  lists.filter(({ Name }) =>
+    Name.toLowerCase().includes(textInput.toLowerCase()),
+  );
