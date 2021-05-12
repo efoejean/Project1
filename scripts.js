@@ -1,4 +1,4 @@
-import { appointments } from './data.js';
+import { appointments, filterAppoint } from './data.js';
 
 let startDate = '';
 let endDate = '';
@@ -27,10 +27,7 @@ function renderAppointment(lists) {
 
 renderAppointment(appointments);
 
-// Sort filter function
-function filterAppoint(lists, bDate, eDate) {
-  return lists.filter(({ Date }) => Date >= bDate && Date <= eDate);
-}
+// filter function
 
 // Search by Name and Phone filter function
 function startWithFilter(lists, textInput) {
