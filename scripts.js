@@ -4,6 +4,7 @@ import {
   nameFilter,
   sortApp,
   getRandomIntInclusive,
+  phoneFilter,
 } from './data.js';
 
 let startDate = '';
@@ -66,6 +67,11 @@ document
     renderAppointment(nameFilter(appointments, value));
   });
 
+document
+  .querySelector('input[id="filterSearch"]')
+  .addEventListener('input', ({ target: { value } }) => {
+    renderAppointment(phoneFilter(appointments, value));
+  });
 // random form query
 document.querySelector('#rewardForm').addEventListener('submit', event => {
   event.preventDefault();
