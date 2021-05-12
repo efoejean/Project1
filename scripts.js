@@ -82,6 +82,7 @@ const appointment = [
 function renderAppointment(lists) {
   lists.forEach(({ Date, Name, Phone, Price, Services, Stylist, Time }) => {
     const newRow = content.cloneNode(true);
+    const tds = newRow.querySelectorAll('td');
   });
 }
 
