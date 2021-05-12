@@ -1,4 +1,4 @@
-import { appointments, filterAppoint } from './data.js';
+import { appointments, filterAppoint, nameFilter } from './data.js';
 
 let startDate = '';
 let endDate = '';
@@ -26,15 +26,6 @@ function renderAppointment(lists) {
 }
 
 renderAppointment(appointments);
-
-// filter function
-
-// Search by Name and Phone filter function
-function startWithFilter(lists, textInput) {
-  return lists.filter(({ Phone, Name }) =>
-    (Phone, Name.toLowerCase()).includes(textInput.toLowerCase()),
-  );
-}
 
 // random function
 function getRandomIntInclusive(min, max) {
@@ -72,7 +63,7 @@ document.querySelectorAll('input[type="checkbox"]').forEach(input => {
 document
   .querySelector('input[id="filterSearch"]')
   .addEventListener('input', ({ target: { value } }) => {
-    renderAppointment(startWithFilter(appointments, value));
+    renderAppointment(nameFilter(appointments, value));
   });
 
 // random form query
