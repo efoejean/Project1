@@ -8,6 +8,8 @@ const tbody = document.querySelector('tbody');
 const { content } = document.querySelector('template');
 
 function renderAppointment(lists) {
+  tbody.innerHTML = '';
+
   lists.forEach(({ Date, Name, Phone, Price, Services, Stylist, Time }) => {
     const newRow = content.cloneNode(true);
     const tds = newRow.querySelectorAll('td');
