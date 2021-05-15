@@ -3,21 +3,6 @@
   --medium-gap: 25px;
 }
 body {
-  background-image: linear-gradient(
-    to right,
-    #1d15dd,
-    #0051ef,
-    #0071f0,
-    #008ce6,
-    #00a2d8,
-    #00a1d6,
-    #009fd4,
-    #009ed2,
-    #0085da,
-    #0069dd,
-    #0048d6,
-    #2709bf
-  );
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 12px;
@@ -75,10 +60,10 @@ th {
   text-align: center;
 }
 tr:nth-of-type(even) {
-  background-color: #f8fcf7;
+  background-color: #67acfa;
 }
 tr:first-of-type {
-  background-color: #f3eadf;
+  background-color: #c1c2f17a;
 }
 tr:hover {
   background-color: #13e4f3;
