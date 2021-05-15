@@ -23,7 +23,7 @@ body {
   font-size: 12px;
 }
 form {
-  background-color: #b8860b;
+  background-color: #0c10e67a;
   border: 1px solid;
   box-shadow: 5px 5px;
   height: auto;
@@ -71,13 +71,13 @@ th {
   text-align: center;
 }
 tr:nth-of-type(even) {
-  background-color: #f0e68c;
+  background-color: #f8fcf7;
 }
 tr:first-of-type {
-  background-color: #b8860b;
+  background-color: #f3eadf;
 }
 tr:hover {
-  background-color: #f5f5f5;
+  background-color: #13e4f3;
 }
 select {
   background-color: whitesmoke;
