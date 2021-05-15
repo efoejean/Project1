@@ -94,8 +94,10 @@
         <label for="startDate">Start Date</label
         ><input id="startDate" type="date" required />
         <label for="endDate">End Date</label><input id="endDate" type="date" />
-        <button id="filterbtn" type="submit">Filter By date</button>
-        <button type="reset">Reset!</button>
+        <button id="filterbtn" class="button" type="submit">
+          Filter By date
+        </button>
+        <button class="button button-reset" type="reset">Reset!</button>
       </form>
       <p>The winner will appear here</p>
 
@@ -105,8 +107,10 @@
         ><input id="startDateReward" type="date" required />
         <label for="endDate">End Date</label
         ><input id="endDateReward" type="date" required />
-        <button id="filterReward" type="submit">Pick a Winner</button>
-        <button type="reset">Reset!</button>
+        <button id="filterReward" class="button" type="submit">
+          Pick a Winner
+        </button>
+        <button class="button button-reset" type="reset">Reset!</button>
       </form>
     </div>
     <div class="flex flex-row">
@@ -140,18 +144,26 @@
       </div>
       <div class="flex flex-row">
         <div>
-          <button id="showAll" type="button">showAll</button>
+          <button id="showAll" class="button button-simple" type="button">
+            showAll
+          </button>
         </div>
-        <div><button id="sort" type="button">Sort By Date!</button></div>
+        <div>
+          <button id="sort" class="button button-simple" type="button">
+            Sort By Date!
+          </button>
+        </div>
       </div>
     </div>
     <div>
       <p id="totalP">Set filter and get total / just get total</p>
-      <button id="total">get total</button>
+      <button id="total" class="button button-simple">get total</button>
       <p id="totalResult">Total price will show here!</p>
     </div>
     <div>
-      <button id="delete" type="button">delete</button>
+      <button id="delete" class="button button-simple" type="button">
+        delete
+      </button>
     </div>
 
     <table id="appointment">
