@@ -14,6 +14,7 @@ let startDate = '';
 let endDate = '';
 
 const p = document.querySelector('p');
+const resultP = document.querySelector('#totalResult');
 const tbody = document.querySelector('tbody');
 const { content } = document.querySelector('template');
 
@@ -95,8 +96,7 @@ document
     }
   });
 document.querySelector('#total').addEventListener('click', () => {
-  reducePrice(appointments);
-  console.log(reducePrice(appointments));
+  resultP.innerHTML = `The total amount is $${reducePrice(appointments)}`;
 });
 // random form query
 document.querySelector('#rewardForm').addEventListener('submit', event => {
