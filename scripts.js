@@ -54,6 +54,7 @@ document.querySelector('button[id="sort"]').addEventListener('click', () => {
 // filter query
 document.querySelector('#filterForm').addEventListener('submit', event => {
   event.preventDefault();
+
   startDate = event.target.elements[0].value;
   endDate = event.target.elements[1].value;
   const filterResult = filterAppoint(appointments, startDate, endDate);
@@ -97,6 +98,12 @@ document
   });
 document.querySelector('#total').addEventListener('click', () => {
   resultP.innerHTML = `The total amount is $${reducePrice(appointments)}`;
+});
+
+document.querySelector('#total').addEventListener('click', () => {
+  resultP.innerHTML = `The total amount is $${reducePrice(
+    filterAppoint(appointments, startDate, endDate),
+  )}`;
 });
 // random form query
 document.querySelector('#rewardForm').addEventListener('submit', event => {
