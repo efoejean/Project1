@@ -81,6 +81,12 @@ document
   .addEventListener('change', ({ target: { value } }) => {
     renderAppointment(ServiceFilter(appointments, value));
   });
+
+document
+  .querySelector('select[id="stylistSearch"]')
+  .addEventListener('change', ({ target: { value } }) => {
+    renderAppointment(StylistFilter(appointments, value));
+  });
 // random form query
 document.querySelector('#rewardForm').addEventListener('submit', event => {
   event.preventDefault();
