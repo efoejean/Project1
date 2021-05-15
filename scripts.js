@@ -6,6 +6,7 @@ import {
   getRandomIntInclusive,
   phoneFilter,
   ServiceFilter,
+  StylistFilter,
 } from './data.js';
 
 let startDate = '';
