@@ -96,14 +96,15 @@ document
       renderAppointment(StylistFilter(appointments, value));
     }
   });
-document.querySelector('#total').addEventListener('click', () => {
-  resultP.innerHTML = `The total amount is $${reducePrice(appointments)}`;
-});
 
 document.querySelector('#total').addEventListener('click', () => {
   resultP.innerHTML = `The total amount is $${reducePrice(
     filterAppoint(appointments, startDate, endDate),
   )}`;
+});
+
+document.querySelector('showAll').addEventListener('click', () => {
+  renderAppointment(appointments);
 });
 // random form query
 document.querySelector('#rewardForm').addEventListener('submit', event => {
