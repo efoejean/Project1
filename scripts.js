@@ -103,9 +103,6 @@ document.querySelector('#total').addEventListener('click', () => {
   )}`;
 });
 
-document.querySelector('showAll').addEventListener('click', () => {
-  renderAppointment(appointments);
-});
 // random form query
 document.querySelector('#rewardForm').addEventListener('submit', event => {
   event.preventDefault();
