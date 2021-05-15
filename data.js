@@ -91,3 +91,6 @@ export const phoneFilter = (lists, textInput) =>
 
 export const ServiceFilter = (lists, textInput) =>
   lists.filter(({ Services }) => Services === textInput);
+
+export const StylistFilter = (lists, textInput) =>
+  lists.filter(({ Stylist }) => Stylist === textInput);
