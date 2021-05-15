@@ -64,7 +64,7 @@ document.querySelectorAll('input[type="checkbox"]').forEach(input => {
   });
 });
 document
-  .querySelector('input[id="filterSearch"]')
+  .querySelector('input[id="nameSearch"]')
   .addEventListener('input', ({ target: { value } }) => {
     renderAppointment(nameFilter(appointments, value));
   });
