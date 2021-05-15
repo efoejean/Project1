@@ -75,7 +75,11 @@ document
   .addEventListener('input', ({ target: { value } }) => {
     renderAppointment(phoneFilter(appointments, value));
   });
-
+document
+  .querySelector('select[id="styleSearch"]')
+  .addEventListener('change', ({ target: { value } }) => {
+    renderAppointment(ServiceFilter(appointments, value));
+  });
 // random form query
 document.querySelector('#rewardForm').addEventListener('submit', event => {
   event.preventDefault();
