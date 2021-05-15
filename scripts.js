@@ -7,6 +7,7 @@ import {
   phoneFilter,
   ServiceFilter,
   StylistFilter,
+  reducePrice,
 } from './data.js';
 
 let startDate = '';
@@ -58,11 +59,9 @@ document.querySelector('#filterForm').addEventListener('submit', event => {
   renderAppointment(filterResult);
 });
 
-document.querySelectorAll('input[type="checkbox"]').forEach(input => {
-  input.addEventListener('change', ({ target: { checked } }) => {
-    document.querySelector('#delete').addEventListener('click', () => {
-      console.log(checked);
-    });
+document.querySelector('#delete').addEventListener('click', () => {
+  document.querySelectorAll('input[type="checkbox"]').forEach(input => {
+    input.addEventListener('change', ({ target: { checked } }) => {});
   });
 });
 document
@@ -95,6 +94,7 @@ document
       renderAppointment(StylistFilter(appointments, value));
     }
   });
+
 // random form query
 document.querySelector('#rewardForm').addEventListener('submit', event => {
   event.preventDefault();
