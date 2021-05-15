@@ -94,3 +94,6 @@ export const ServiceFilter = (lists, textInput) =>
 
 export const StylistFilter = (lists, textInput) =>
   lists.filter(({ Stylist }) => Stylist === textInput);
+
+export const reducePrice = lists =>
+  lists.reduce((total, { Price }) => total + Number(Price.slice(1)), 0);
