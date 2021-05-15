@@ -94,8 +94,9 @@ document
       renderAppointment(StylistFilter(appointments, value));
     }
   });
-document.querySelector('#total').addEventListener('click', event => {
-  console.log(event.target.innerHTML);
+document.querySelector('#total').addEventListener('click', () => {
+  reducePrice(appointments);
+  console.log(reducePrice(appointments));
 });
 // random form query
 document.querySelector('#rewardForm').addEventListener('submit', event => {
