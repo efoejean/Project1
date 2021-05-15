@@ -88,3 +88,6 @@ export const getRandomIntInclusive = (min, max) =>
 
 export const phoneFilter = (lists, textInput) =>
   lists.filter(({ Phone }) => Phone.includes(textInput));
+
+export const ServiceFilter = (lists, textInput) =>
+  lists.filter(({ Services }) => Services === textInput);
