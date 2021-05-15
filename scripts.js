@@ -79,13 +79,21 @@ document
 document
   .querySelector('select[id="styleSearch"]')
   .addEventListener('change', ({ target: { value } }) => {
-    renderAppointment(ServiceFilter(appointments, value));
+    if (value === 'default') {
+      renderAppointment(appointments);
+    } else {
+      renderAppointment(ServiceFilter(appointments, value));
+    }
   });
 
 document
   .querySelector('select[id="stylistSearch"]')
   .addEventListener('change', ({ target: { value } }) => {
-    renderAppointment(StylistFilter(appointments, value));
+    if (value === 'default') {
+      renderAppointment(appointments);
+    } else {
+      renderAppointment(StylistFilter(appointments, value));
+    }
   });
 // random form query
 document.querySelector('#rewardForm').addEventListener('submit', event => {
