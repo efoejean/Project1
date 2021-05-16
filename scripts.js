@@ -61,11 +61,6 @@ document.querySelector('#filterForm').addEventListener('submit', event => {
   renderAppointment(filterResult);
 });
 
-document.querySelector('#delete').addEventListener('click', () => {
-  document.querySelectorAll('input[type="checkbox"]').forEach(input => {
-    input.addEventListener('change', ({ target: { checked } }) => {});
-  });
-});
 document
   .querySelector('input[id="nameSearch"]')
   .addEventListener('input', ({ target: { value } }) => {
