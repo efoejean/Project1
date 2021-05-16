@@ -17,6 +17,8 @@
     4. Share any other tips or guidance for others attempting this or something similar.
  -->
 
+- To have an idea of the app does please click [here](https://project2021efoe.netlify.app/).
+
 - My overall experience while creating this App was good. I was immersed in basic skill of creating and testing the app and fix issues. It was very impressive how sometime when we change a code, it affects the whole code🤦‍♂‍, and we must rewrite or find another way to make everything look good.
 - I have learned how to display Array elements into a table using template. I have also improved on how to write clean code, even though it is not perfect yet😉, I have managed to create import function and data from another file.
 
