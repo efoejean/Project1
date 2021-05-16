@@ -24,7 +24,7 @@
 
 <!-- TODO: List any MAJOR libraries/frameworks (e.g. React, Tailwind) with links to their homepages. -->
 
-- I have built this App with basic [Vanilla JavaScript] (https://developer.mozilla.org/en-US/docs/Web/JavaScript) .
+- I have built this App with basic Vanilla [JavaScript] (https://developer.mozilla.org/en-US/docs/Web/JavaScript) .
 
 ## Features
 
@@ -37,7 +37,7 @@
 
 ## Contact
 
-- Feel free to correct or [contact me] (https://github.com/swic-cis-177/capstone-project-efoejean/issues) if there are any issues😎.
+- Feel free to correct or contact[me] (https://github.com/swic-cis-177/capstone-project-efoejean/issues) if there are any issues😎.
 
 ## <!-- TODO: Include icons and links to your RELEVANT, PROFESSIONAL 'DEV-ORIENTED' social media. LinkedIn and dev.to are minimum. -->
 
