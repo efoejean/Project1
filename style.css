@@ -95,6 +95,12 @@ select {
   padding: 10px;
   width: 400px;
 }
+.div {
+  background-color: rgb(199, 156, 100);
+  border-color: #221811;
+  border-style: solid;
+  padding: 10px;
+}
 .form {
   background-color: #c1c2f17a;
   border: 1px solid;
